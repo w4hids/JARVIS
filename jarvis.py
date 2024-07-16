@@ -70,12 +70,12 @@ def sendEmail(to, content):
     server = smtplib.SMTP('smtp.gmail.com', 587)
     server.ehlo()
     server.starttls()
-    server.login('samaniwahiduddin382@gmail.com','S@mani121921')    
-    server.sendmail('samaniwahiduddin382@gmail.com', to, content)  
+    server.login('YOUREMAIL','YOURPASSWORD')    
+    server.sendmail('RECIVEREMAIL', to, content)  
     server.close()
 
 def weather():
-    api_key = "ec50293ddc81ce7bf2bbba628d3b967b"
+    api_key = "API_KEY"
     base_url = "http://api.openweathermap.org/data/2.5/weather?"
     speak("Which city weather you want to know?")
     city_name = takeCommand()
